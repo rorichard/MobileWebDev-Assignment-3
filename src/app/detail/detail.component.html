@@ -1,0 +1,16 @@
+<div class="grid-container">
+    <div class="grid-nav" >
+        <button (click)="aSong(i)" *ngFor = "let s of mySongs; let i = index" id="d{{i}}" class="nav-buttons">
+            {{s.gName}}
+        </button> 
+    </div>
+    <div class="grid-pic">
+        <img src={{selectedSong.gPicture}} alt="kpop poster" height=50% width=50%>
+    </div>
+    <div class="grid-detail">
+            Name: {{selectedSong.gName}} <br />
+            Artist: {{selectedSong.gArtist}}<br/>
+            Genre: {{selectedSong.gGenre}}<br/>
+            Year: {{selectedSong.gYear}}
+    </div>
+</div>
